@@ -1,0 +1,33 @@
+.main {
+  width: 100%;
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* overflow-y: auto; */
+}
+
+.mainContent {
+  width: 95%;
+  min-height: 74vh;
+  /* overflow-y: auto; */
+  margin: 7vh auto 2vh;
+  display: flex;
+  position: relative;
+}
+
+/* НАЧАЛО СТИЛИЗАЦИИ ПРАВОЙ ЧАСТИ (КОД И РЕЗУЛЬТАТ): */
+
+.codeAndResult_container {
+  margin-left: 3%;
+  width: 67%;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activeTab {
+  background-color: orange;
+  color: white;
+}

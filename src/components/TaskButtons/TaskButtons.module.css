@@ -1,0 +1,129 @@
+.buttonsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    position: relative;
+    z-index: 11;
+}
+
+.checkButton {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 11px;
+    background-color: #ff6b08;
+    border: 0;
+    outline: none;
+    letter-spacing: 0.3px;
+}
+
+.disableCheckButton {
+    composes: checkButton;
+    background-color: #fff;
+    color: #e0e2e6;
+    border: 1px solid#e0e2e6;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.checkButton:hover {
+    background-color: #e96105;
+}
+
+.disableCheckButton:hover {
+    background-color: #fff;
+}
+
+.buttonWithSvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #2a2a2a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 5px 11px;
+    background-color: transparent;
+    margin-left: 10px;
+    border: 1px solid #c1c1c1;
+    outline: none;
+}
+
+.buttonWithoutSvg {
+    composes: buttonWithSvg;
+    height: 30px;
+}
+
+.disableButtonWithSvg {
+    composes: buttonWithSvg;
+    color: #e0e2e6;
+    border: 1px solid#e0e2e6;
+    pointer-events: none;
+}
+
+.buttonWithSvg:hover {
+    border: 1px solid #1b4371;
+}
+
+.disableButtonWithSvg:hover {
+    border: 1px solid #e0e2e6;
+}
+
+.svg {
+    margin-right: 0.5rem;
+    fill: #2a2a2a;
+}
+
+.disableSvg {
+    margin-right: 0.5rem;
+    fill: #e0e2e6;
+}
+
+@media (max-height: 600px) {
+    .checkButton {
+        font-size: 10px;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-align: center;
+        padding: 3px 5px;
+        background-color: #ff6b08;
+        border: 0;
+        outline: none;
+        letter-spacing: 0.3px;
+    }
+
+    .disableCheckButton {
+        composes: checkButton;
+        background-color: #fff;
+        color: #e0e2e6;
+        border: 1px solid#e0e2e6;
+        pointer-events: none;
+        cursor: pointer;
+    }
+
+    .svg {
+        margin-right: 0.5rem;
+        fill: #2a2a2a;
+        width: 9px;
+        height: 9px;
+    }
+
+    .buttonWithSvg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        color: #2a2a2a;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        padding: 3px 5px;
+        background-color: transparent;
+        margin-left: 10px;
+        border: 1px solid #c1c1c1;
+        outline: none;
+    }
+}

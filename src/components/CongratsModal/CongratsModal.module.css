@@ -1,0 +1,112 @@
+.wrapper {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+}
+
+.winnerCup {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    width: 110px;
+    height: 120px;
+}
+
+.modalTitle {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #f7f7f7;
+    padding: 75px 0 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.close:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contentWrapper {
+    padding: 25px 58px 0 58px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #2a2a2a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.fatText {
+    font-size: 14px;
+    color: #2a2a2a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.countTasks {
+    margin-right: 10px;
+}
+
+.result {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.button_container::after {
+    width: 100%;
+    content: "";
+    display: block;
+    height: 58px;
+}
+
+.button {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #ff6b08;
+    border: 0;
+    outline: none;
+    letter-spacing: 0.3px;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #e96105;
+}

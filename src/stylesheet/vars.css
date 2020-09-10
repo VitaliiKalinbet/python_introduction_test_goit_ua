@@ -1,0 +1,51 @@
+:root {
+  /* fonts */
+  --font-main: 'Montserrat', sans-serif;
+  --font-main-medium: 'Montserrat Medium', sans-serif;
+  --font-second: 'Acrom', sans-serif;
+
+  /* sizes */
+  --gutter: 25px;
+  --header-mob: 50px;
+  --header-tablet: 70px;
+  --header-desktop: 75px;
+  --footer-mob: 75px;
+  --footer-tablet: 54px;
+  --footer-desktop: 54px;
+
+  /* box-shadow */
+  --bs-dark: 0 1px 2px 2px hsla(0, 0%, 0%, 0.2);
+  --bs-dark-middle: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+  --bs-dark-wide: 0 3px 3px 3px hsla(0, 0%, 0%, 0.2);
+  --bs-light: 0 0 6px 6px hsla(0, 0%, 50%, 0.2);
+  --bs-light-hover: 0 0 4px 4px hsla(0, 0%, 70%, 0.3);
+  --bs-light-active: 0 0 2px 2px hsla(0, 0%, 70%, 0.4);
+  /* text-shadow */
+  --ts: 0 0 2px hsla(0, 0%, 0%, 0.5);
+
+  /* colors */
+  --main-900: #102136;
+  /* --bg-main */
+  --main-800: #181c27;
+  /* - 181c27*/
+  --main-700: #28384a;
+  /* --bg-semi-dark */
+  --main-500: #4c5968;
+  /* --bg-light */
+  --main-300: #6b6f7a;
+  /* --color-dark --color-grey */
+  --main-200: #888d99;
+  /* --color-second */
+  --main-100: #f7f7f7;
+  /* --bg-second*/
+
+  --txt-100: hsla(222, 8%, 57%, 0.522);
+
+  --acent-400: #e96105;
+  /* --color-acsent */
+  --acent-300: #ff6b08;
+
+  /* footer background-color */
+  --footer-bg: #f7f7f7;
+  --header-bg: #102136;
+}

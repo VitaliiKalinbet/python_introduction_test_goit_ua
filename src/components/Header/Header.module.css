@@ -1,0 +1,247 @@
+.header_container {
+    width: 100%;
+    height: 7vh;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContent {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_container {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_container a {
+    cursor: pointer;
+}
+
+.logo_title {
+    font-size: 16px;
+    color: #f7f7f7;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-left: 15px;
+    letter-spacing: 0.3px;
+}
+
+.img {
+    width: 90px;
+    height: 30px;
+}
+
+@media (max-width: 1200px) {
+    .logo_title {
+        font-size: 14px;
+        color: #f7f7f7;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        letter-spacing: 0.3px;
+    }
+
+    .img {
+        width: 72px;
+        height: 24px;
+    }
+}
+
+.questionCounter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 52px;
+    height: 26px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid var(--main-300);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    fill: #888d99;
+}
+
+.button:hover {
+    background-color: #1b4371;
+    border: 0;
+    border: 1px solid #1b4371;
+}
+
+.button:hover .arrow {
+    fill: white;
+}
+
+.count {
+    position: relative;
+    width: 170px;
+    height: 28px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #f7f7f7;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 1rem;
+    border: 1px solid var(--main-300);
+    cursor: pointer;
+}
+
+.language_container {
+    font-size: 14px;
+    color: #586472;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    padding-left: 2vw;
+}
+
+.language_container_hide {
+    position: relative;
+    z-index: -10;
+}
+
+.language_container .languageUaActive {
+    cursor: pointer;
+    color: #ffffff;
+    padding-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.languageUaNotActive {
+    cursor: pointer;
+    color: #586472;
+    padding-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.languageRuActive {
+    cursor: pointer;
+    color: #ffffff;
+    border-right: 1px solid #6B6F7A;
+    padding-right: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.languageRuNotActive {
+    cursor: pointer;
+    color: #586472;
+    border-right: 1px solid #6B6F7A;
+    padding-right: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .arrow {
+        width: 42px;
+        height: 21px;
+    }
+
+    .button {
+        background-color: transparent;
+        border: 1px solid var(--main-300);
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow {
+        fill: #888d99;
+    }
+
+    .button:hover {
+        background-color: #1b4371;
+        border: 0;
+        border: 1px solid #1b4371;
+    }
+
+    .button:hover .arrow {
+        fill: white;
+    }
+
+    .count {
+        position: relative;
+        width: 150px;
+        height: 23px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #f7f7f7;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 5px;
+        border: 1px solid var(--main-300);
+        cursor: pointer;
+    }
+
+    .language_container {
+        font-size: 12px;
+        color: #586472;
+        font-family: "Open Sans", sans-serif;
+        letter-spacing: 1px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        padding-left: 2vw;
+    }
+
+    .languageUaActive {
+        font-size: 12px;
+    }
+
+    .languageUaNotActive {
+        font-size: 12px;
+    }
+
+    .languageRuActive {
+        font-size: 12px;
+    }
+
+    .languageRuNotActive {
+        font-size: 12px;
+    }
+}

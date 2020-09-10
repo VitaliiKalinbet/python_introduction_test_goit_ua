@@ -1,0 +1,29 @@
+<svg id="браузер" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1220" height="32" viewBox="0 0 1220 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 13px;
+        fill: #6b6f7a;
+        font-family: Montserrat;
+      }
+    </style>
+  </defs>
+  <rect id="браузерная_строка" data-name="браузерная строка" class="cls-1" x="32" width="1188" height="32"/>
+  <image id="иконка_расширить_окно" data-name="иконка расширить окно" x="1199" y="10" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAArElEQVQokYWRsQ3CMBREH+ABGIERqBANRTahp0C0NIQJWIFNYASPwAiwATrzHU4QyJOsON/3v5O70Wa7nwJz3txiiVmsSk4hvljxCLSxXwMHO2uSvew0waaLM3CNoScVvCHHoeOfV5gslis9HyG+85uiSTGl/SPENeMB4RdqkG3qdvs+6TS1QdYNNRSNu1TD6wuuC9b/QT4rQIVV0V61koHQDfK/MVFfcC8gPwGJtyPBKf0Y1gAAAABJRU5ErkJggg=="/>
+  <g id="update">
+    <rect id="bg_копия_2" data-name="bg копия 2" class="cls-1" width="32.031" height="32"/>
+    <image id="icon_reset_копия" data-name="icon reset копия" x="10" y="7" width="13" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAABS0lEQVQokYXTvUuVYRgG8N+Rok5QR6mm01JhJIKtujjbXAZtCm5CQjUJ4qBuhn+AQ24N2tCkjRHhH+CQSw0tBkkSZZriB7fc7/L2nuO1vDzPfV/3x/Vcb218YlIFariKPzguhzuqGOjEG9ypCrYinWAAK7jVjnQXi/iJHXThAZZxrYrUjw8Yyx3W83uIJeyWSb14iyZmcAMP8R0vs/sRGrlr4wJe4DrmMJvF/uEZVrNjM4X5EucgDeUOr3CQpP3sXuA3buNekGK8OjZz/laI2OfMrbeSvC1ivD3cx8U2iRHrydyz8WLZr2mbwCU8wpU8R+HnuIn3WCsuAr/Sc6OYRh/+Isw5hW3MF+pFcvFmQVjAZbxDd75bvNljbJRtFOOMJCEQ3ouirzGIT0ViXBaI3+BJdghhwos/qlQpS76FYXw8T/IyvuFpdv4fOAW7yUPtUQEjbAAAAABJRU5ErkJggg=="/>
+  </g>
+  <g id="https:_" data-name="https://">
+    <rect id="Прямоугольник_7" data-name="Прямоугольник 7" class="cls-2" x="34.031" y="2" width="269.219" height="28"/>
+    <text id="https:_goit.maraphon.html.css_" data-name="https://goit.maraphon.html.css/" class="cls-3" transform="translate(43.035 21)">https://goit.maraphon.html.css/</text>
+  </g>
+</svg>

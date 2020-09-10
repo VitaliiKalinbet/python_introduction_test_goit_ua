@@ -1,0 +1,213 @@
+@import './libs/normalize.css';
+/* @import './fonts.css'; */
+@import './vars.css';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+​img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.react-sweet-progress-line-inner-status-active {
+    background-color: #9ecb45 !important;
+}
+
+.react-sweet-progress-symbol {
+    visibility: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.browser {
+    padding: 1rem 1.5rem;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    margin: 1rem 0 0;
+    position: relative;
+}
+
+div.warning {
+    background-color: rgba(254, 200, 48, 0.1);
+    color: #292929;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+    margin: 1rem 0;
+    padding: 20px;
+    border: 1px solid #fec830;
+}
+
+.CodeMirror {
+    width: 100%;
+    height: 40vh;
+}
+
+.bigHeightCodeMirror {
+    width: 100%;
+    height: 76vh;
+}
+
+
+/* стилизация сколла во всем приложении кроме браузера */
+* ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: rgba(193, 193, 193, 0.5);
+    border-radius: 10px;
+}
+
+/* классы для анимации кнопки макет */
+.enterButtonLayout {
+    background-color: #ff6b08;
+    color: white;
+    border: 1px solid #ff6b08;
+    ;
+    transition: background-color 3000ms ease-in-out, color 3000ms ease-in-out, border 3000ms ease-in-out;
+}
+
+.exitButtonLayout {
+    background-color: #fff;
+    color: #2a2a2a;
+    border: 1px solid #c1c1c1;
+    transition: background-color 3000ms ease-in-out, color 3000ms ease-in-out, border 3000ms ease-in-out;
+}
+
+/* анимация поздравительной модалки с архивом кода */
+@keyframes confetti-slow {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+}
+
+@keyframes confetti-medium {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+}
+
+@keyframes confetti-fast {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+}
+
+.confetti-container {
+    perspective: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0%;
+}
+
+.confetti--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+}
+
+.confetti--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+}
+
+.confetti--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+/* конец анимации поздравительной модалки с архивом кода */
+
+
+/* для того чтобы при открытии модального окна не было скролла */
+.noscroll {
+    overflow: hidden;
+}
+
+
+/* для подстветки строчек кода в CodeMirror которые нельзя редактировать */
+/* .not-editable-content {
+    background-color: rgb(28, 84, 151);
+    pointer-events: none;
+} */
+
+/* .hl-mark-line {
+    background-color: rgb(47, 84, 133);
+} */
+
+.hl-line {
+    /* background: #888; */
+    background: rgba(136, 136, 136, 0.3)
+}
+
+/* 
+.not-editable-content {
+    background-color: rgb(54, 58, 63);
+} */
+
+.not-editable-content {
+    color: #aaa;
+}
+
+/* .CodeMirror {
+    background-color: rgba(16, 33, 54, 1) !important;
+} */
+
+.CodeMirror:nth-of-type(n) {
+    display: none !important;
+}
+
+.CodeMirror:nth-of-type(1) {
+    display: block !important;
+}

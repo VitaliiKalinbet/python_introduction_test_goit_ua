@@ -1,0 +1,158 @@
+.result_container {
+    width: 100%;
+    min-height: 36vh;
+    border: solid 1px #c1c1c1;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header styling - start */
+.header {
+    height: 6vh;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 1px #c1c1c1;
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .title {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: #292929;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        color: #292929;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+/* header styling - end */
+
+
+/* main styling - start */
+.main {
+    display: flex;
+    overflow-y: auto;
+}
+
+.criteriaSmall {
+    width: 50%;
+    height: 30vh;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.criteriaBig {
+    width: 90%;
+    height: 30vh;
+    padding: 10px;
+}
+
+.list {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.rightCriteria {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #169b20;
+    display: flex;
+    position: relative;
+}
+
+.wrongCriteria {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #dc3014;
+    display: flex;
+    position: relative;
+}
+
+.criteriaIcon {
+    position: absolute;
+    top: 3px;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+}
+
+.consoleWrapper {
+    width: 50%;
+
+    border-bottom: solid 1px #c1c1c1;
+    border-left: solid 1px #c1c1c1;
+
+}
+
+.consoleTitle {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #292929;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 5px 0;
+    border-bottom: solid 1px #c1c1c1;
+}
+
+.consoleContent {
+    height: calc(30vh - 13px);
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 1300px) {
+    .consoleTitle {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: #292929;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        background-color: #f7f7f7;
+        padding: 5px 0;
+    }
+}
+
+/* main styling - end */

@@ -1,0 +1,52 @@
+.modal_div {
+    position: fixed;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* overflow-y: auto; */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: grey;
+}
+
+@media (min-width: 0) and (max-width: 1080px) {
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        fill: grey;
+    }
+}
+
+.close:hover {
+    padding: 0.1rem;
+}
+
+/* .modal {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 380px;
+    height: 195px;
+    border-radius: 20px;
+    background-color: #fff;
+} */

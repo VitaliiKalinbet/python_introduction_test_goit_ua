@@ -1,0 +1,33 @@
+.footer_container {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-bg);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #2a2a2a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.signOfCopyright {
+    margin-right: 5px;
+}
+
+.signOfDivider {
+    opacity: 0.2;
+    margin: 0 5px;
+}
+
+.privacyPolicy {
+    cursor: pointer;
+}
