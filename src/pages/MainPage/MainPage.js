@@ -34,7 +34,7 @@ import "codemirror/mode/htmlmixed/htmlmixed";
 import localization from "../../utils/localization";
 
 const timerDelayInMs = 600000; // 10 minutes
-// const timerDelayInMs = 720; // 1 second
+// const timerDelayInMs = 720; // 1 seconds
 
 let shouldAvailabilityAutotranslator = false;
 const waitTimeInMs = 1000;
