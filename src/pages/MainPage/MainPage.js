@@ -34,7 +34,7 @@ import "codemirror/mode/htmlmixed/htmlmixed";
 import localization from "../../utils/localization";
 
 const timerDelayInMs = 600000; // 10 minutes
-// const timerDelayInMs = 720; // 1 seconds
+// const timerDelayInMs = 720; // 1 second
 
 let shouldAvailabilityAutotranslator = false;
 const waitTimeInMs = 1000;
@@ -128,6 +128,7 @@ class MainPage extends Component {
       const token = new URLSearchParams(location.search).get("token");
       const block = new URLSearchParams(location.search).get("block");
       this.getCurrentBlockAndCurrentTask(token, block);
+      this.showResultArea();
     } else {
       this.setState({ errorShow: true });
     }
@@ -153,8 +154,6 @@ class MainPage extends Component {
       this.checkAvailabilityAutotranslator();
     }, 2000);
     // monitoring availability autotranslator - end
-
-    this.showResultArea();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -661,7 +660,11 @@ class MainPage extends Component {
     if (
       !this.headerTextLogoRef.current.textContent.includes(
         language === "ru"
-          ? taskblockMetadata.ru.title
+          ? taskblockMetadata.ru === undefined
+            ? ""
+            : taskblockMetadata.ru.title
+          : taskblockMetadata.ua === undefined
+          ? ""
           : taskblockMetadata.ua.title
       ) ||
       !this.headerTextQuestionRef.current.textContent.includes(

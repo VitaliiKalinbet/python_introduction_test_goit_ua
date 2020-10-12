@@ -24,7 +24,11 @@ const CodeEditors = ({
     >
       <h4 className={styles.codeTitle}>
         {language === "ru"
-          ? taskblockMetadata.ru.editorTitle
+          ? taskblockMetadata.ru === undefined
+            ? ""
+            : taskblockMetadata.ru.editorTitle
+          : taskblockMetadata.ua === undefined
+          ? ""
           : taskblockMetadata.ua.editorTitle}
         :
       </h4>

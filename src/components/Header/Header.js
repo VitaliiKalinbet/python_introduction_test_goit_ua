@@ -50,7 +50,11 @@ const Header = ({
             {taskblockMetadata.defaultLanguage === ""
               ? ""
               : language === "ru"
-              ? taskblockMetadata.ru.title
+              ? taskblockMetadata.ru === undefined
+                ? ""
+                : taskblockMetadata.ru.title
+              : taskblockMetadata.ua === undefined
+              ? ""
               : taskblockMetadata.ua.title}
           </span>
         </h1>
@@ -89,7 +93,9 @@ const Header = ({
 
         <p
           className={
-            taskblockMetadata.allowSwitchLanguage
+            taskblockMetadata.allowSwitchLanguage === undefined
+              ? styles.language_container
+              : taskblockMetadata.allowSwitchLanguage
               ? styles.language_container
               : styles.language_container_hide
           }
