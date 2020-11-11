@@ -1,4 +1,5 @@
 .textArea {
     overflow: auto;
-    height: 38vh;
+    height: 40vh;
+    min-height: 180px;
 }

@@ -10,10 +10,15 @@
 .mainContent {
   width: 95%;
   min-height: 74vh;
-  /* overflow-y: auto; */
-  margin: 7vh auto 2vh;
+  margin: 50px auto 20px;
   display: flex;
   position: relative;
+}
+
+@media (max-height: 600px) and (min-width: 901px) {
+  .mainContent {
+    margin: 35px auto 15px;
+  }
 }
 
 /* НАЧАЛО СТИЛИЗАЦИИ ПРАВОЙ ЧАСТИ (КОД И РЕЗУЛЬТАТ): */
@@ -22,9 +27,47 @@
   margin-left: 3%;
   width: 67%;
   height: 82vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.codeTitle {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border: 1px solid var(--header-bg);
+  outline: none;
+  padding: 8px 10px 15px;
+  background-color: var(--header-bg);
+}
+
+.codeTitleHide {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .codeTitle {
+      top: -25px;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 8px 15px;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 901px) {
+  .codeTitle {
+    top: -20px;
+    font-size: 8px;
+    font-weight: 500;
+    padding: 3px 5px 10px;
+  }
 }
 
 .activeTab {

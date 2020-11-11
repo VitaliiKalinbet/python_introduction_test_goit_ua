@@ -67,6 +67,7 @@ div.warning {
 .CodeMirror {
     width: 100%;
     height: 40vh;
+    min-height: 180px;
 }
 
 .bigHeightCodeMirror {

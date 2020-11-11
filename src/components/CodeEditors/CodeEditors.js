@@ -22,16 +22,6 @@ const CodeEditors = ({
       style={{ height: isShowResultArea ? "40vh" : "76vh" }}
       className={styles.code_container}
     >
-      <h4 className={styles.codeTitle}>
-        {language === "ru"
-          ? taskblockMetadata.ru === undefined
-            ? ""
-            : taskblockMetadata.ru.editorTitle
-          : taskblockMetadata.ua === undefined
-          ? ""
-          : taskblockMetadata.ua.editorTitle}
-        :
-      </h4>
       <CustomCodeMirror
         mode="java"
         code={valueCode}

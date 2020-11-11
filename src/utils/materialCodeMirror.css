@@ -7,7 +7,7 @@
 .cm-s-material.CodeMirror {
     background-color: #102136;
     color: #eeffff;
-    outline: 1px solid #333;
+    outline: none;
 }
 
 .cm-s-material .CodeMirror-gutters {

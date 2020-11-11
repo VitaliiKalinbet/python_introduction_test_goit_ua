@@ -126,4 +126,9 @@
         border: 1px solid #c1c1c1;
         outline: none;
     }
+
+    .buttonWithoutSvg {
+        composes: buttonWithSvg;
+        height: auto;
+    }
 }

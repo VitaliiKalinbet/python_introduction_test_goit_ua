@@ -939,6 +939,16 @@ class MainPage extends Component {
                 marginLeft: marginLeftCodeAndResultSection,
               }}
             >
+              <h4 className={styles.codeTitle}>
+                {language === "ru"
+                  ? taskblockMetadata.ru === undefined
+                    ? ""
+                    : taskblockMetadata.ru.editorTitle
+                  : taskblockMetadata.ua === undefined
+                  ? ""
+                  : taskblockMetadata.ua.editorTitle}
+                :
+              </h4>
               <CodeEditors
                 valueCode={valueCode}
                 handleChangeCode={this.handleChangeCode}

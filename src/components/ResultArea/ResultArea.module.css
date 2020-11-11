@@ -1,6 +1,7 @@
 .result_container {
     width: 100%;
     min-height: 36vh;
+    min-height: 180px;
     border: solid 1px #c1c1c1;
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
@@ -9,6 +10,7 @@
 /* header styling - start */
 .header {
     height: 6vh;
+    min-height: 35px;
     background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
